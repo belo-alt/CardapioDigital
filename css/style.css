@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*header {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px 5px;
+  border: 5px;  
+  padding: 0px 5px 0px 0px;
+}*/
+
+.LogoCabecalho {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.tit {
+  text-align: center;
+}
+
+.section {
+  height: 100vh; /* Altura da viewport */
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.item {
+    background-color: aliceblue;
+    margin: 5px 5px;
+    border: 5px;  
+    padding: 0px 5px 0px 0px;
+    border-radius: 15px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+  }
+
+  ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+  }
+
+  .pDaLista {
+    font-size: larger;
+  }
+  
+  .flex-item {
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .flex-item:first-child {
+    flex: 1; /* O texto ocupará o espaço restante */
+  }
+  
+  .flex-item:last-child {
+    max-width: 30%; /* Ajuste conforme necessário */
+  }
+
+  .FotoDestaque { /*css da página destaque.html*/
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+  .BodyDestaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+  }
+
+  .H2Destaque {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .H1Destaque {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .PDestaque {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    max-width: 300px; /* Limita a largura do texto para melhorar a legibilidade */
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+.container {
+    text-align: center;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #25d366;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe5d;
+}
+#cop {
+  text-align: center;
+}
+
+/* início do menu*/
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: -60px; /* Escondido no início */
+  left: 0;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+
+.menu-hamburguer {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+nav {
+  width: 100%;
+  background-color: #444;
+  color: white;
+  display: none;
+  position: fixed;
+  top: 60px; /* Ajuste para o menu */
+  left: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.hidden {
+  display: none;
+}
+
+nav.visible {
+  display: block;
+}
