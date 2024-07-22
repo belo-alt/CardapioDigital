@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var header = document.getElementById("header");
     var nav = document.getElementById("nav");
     var menu = document.getElementById("menu");
+    var menuItems = document.querySelectorAll(".menu-item");
 
     // Função para mostrar o menu hambúrguer ao rolar
     window.addEventListener("scroll", function() {
@@ -21,5 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
             nav.classList.remove("visible");
             nav.classList.add("hidden");
         }
+    });
+
+    // Função para fechar o menu ao clicar em um item do menu
+    menuItems.forEach(function(item) {
+        item.addEventListener("click", function() {
+            nav.classList.remove("visible");
+            nav.classList.add("hidden");
+        });
     });
 });
