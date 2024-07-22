@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Função para fechar o menu ao clicar em um item do menu
+    // Função para esconder o menu de navegação após selecionar um item
     menuItems.forEach(function(item) {
         item.addEventListener("click", function() {
             nav.classList.remove("visible");
